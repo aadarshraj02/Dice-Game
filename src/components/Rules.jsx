@@ -25,6 +25,7 @@ const RulesContainer = styled.div`
   background-color: #fbf1f1;
   padding: 20px;
   margin-top: 40px;
+  margin-bottom: 40px;
   border-radius: 10px;
   h2 {
     font-size: 24px;
