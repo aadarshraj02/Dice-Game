@@ -6,6 +6,7 @@ import RollDice from "./RollDice";
 import TotalScore from "./TotalScore";
 import styled from "styled-components";
 import { Button } from "../styled/Button";
+import Rules from "./Rules";
 
 const Gameplay = () => {
   const [score, setScore] = useState(0);
@@ -55,6 +56,7 @@ const Gameplay = () => {
         <Button onClick={resetScore}>Reset Score</Button>
         <Button>Show Rules</Button>
       </div>
+      <Rules></Rules>
     </MainContainer>
   );
 };
