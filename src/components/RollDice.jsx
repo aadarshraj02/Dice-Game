@@ -6,6 +6,7 @@ function RollDice() {
       <div>
         <img src="../../public/dices/dice_1.png" alt="" />
       </div>
+      <p>Click on Dice to roll</p>
     </DiceContainer>
   );
 }
