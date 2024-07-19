@@ -6,21 +6,25 @@ const NumberSelector = () => {
   const [selectedNumber, setSelectedNumber] = useState();
 
   return (
-    <div>
-      {arrayNum.map((value, index) => (
-        <Box
-          isSelected={value == selectedNumber}
-          key={index}
-          onClick={() => setSelectedNumber(value)}
-        >
-          {value}
-        </Box>
-      ))}
-    </div>
+    <NumberSelectorContainer>
+      <div>
+        {arrayNum.map((value, index) => (
+          <Box
+            isSelected={value == selectedNumber}
+            key={index}
+            onClick={() => setSelectedNumber(value)}
+          >
+            {value}
+          </Box>
+        ))}
+      </div>
+    </NumberSelectorContainer>
   );
 };
 
 export default NumberSelector;
+
+const NumberSelectorContainer = styled.div``;
 
 const Box = styled.div`
   height: 72px;
