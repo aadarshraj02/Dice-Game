@@ -12,4 +12,8 @@ function RollDice() {
 
 export default RollDice;
 
-const DiceContainer = styled.div``;
+const DiceContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+`;
