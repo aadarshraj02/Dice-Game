@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 import { useState } from "react";
 import NumberSelector from "./NumberSelector";
 import RollDice from "./RollDice";
@@ -5,7 +7,7 @@ import TotalScore from "./TotalScore";
 import styled from "styled-components";
 
 const Gameplay = () => {
-  const [score, setScore] = useState();
+  const [score, setScore] = useState(0);
   const [selectedNumber, setSelectedNumber] = useState();
   const [currentDice, setCurrentDice] = useState(1);
 
@@ -22,6 +24,8 @@ const Gameplay = () => {
     } else {
       setScore((prev) => prev - 2);
     }
+
+    setSelectedNumber(undefined);
   };
 
   return (
