@@ -18,6 +18,7 @@ const NumberSelector = () => {
           </Box>
         ))}
       </div>
+      <p>Select Number</p>
     </NumberSelectorContainer>
   );
 };
