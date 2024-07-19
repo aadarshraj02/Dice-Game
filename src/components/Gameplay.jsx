@@ -18,5 +18,7 @@ export default Gameplay;
 const MainContainer = styled.main`
   .headerSection {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 `;
