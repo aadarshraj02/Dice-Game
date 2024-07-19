@@ -70,5 +70,6 @@ const MainContainer = styled.main`
     max-width: 220px;
     margin: 0 auto;
     gap: 10px;
+    margin-top: 10px;
   }
 `;
