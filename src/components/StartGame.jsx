@@ -1,11 +1,9 @@
-
+import styled from "styled-components";
 
 function StartGame() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <Container></Container>;
 }
 
-export default StartGame
+export default StartGame;
+
+const Container = styled.div ``;
