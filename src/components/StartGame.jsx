@@ -4,6 +4,10 @@ function StartGame() {
   return (
     <Container>
       <img src="/dices.png" alt="" />
+      <div>
+        <h1>DICE GAME</h1>
+      </div>
+      <Button></Button>
     </Container>
   );
 }
@@ -13,3 +17,4 @@ export default StartGame;
 const Container = styled.div`
   max-width: 1180px;
 `;
+const Button = styled.button``;
