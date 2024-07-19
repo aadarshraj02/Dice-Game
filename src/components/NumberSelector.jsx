@@ -1,17 +1,27 @@
-
 import styled from "styled-components";
 
-const NumberSelector = ({ selectedNumber, setSelectedNumber }) => {
+const NumberSelector = ({
+  setError,
+  error,
+  selectedNumber,
+  setSelectedNumber,
+}) => {
   const arrayNum = [1, 2, 3, 4, 5, 6];
+
+  const numberSelectorHandler = (value) => {
+    setSelectedNumber(value);
+    setError("");
+  };
 
   return (
     <NumberSelectorContainer>
+      <p className="error">{error}</p>
       <div className="flexContainer">
         {arrayNum.map((value, index) => (
           <Box
             isSelected={value == selectedNumber}
             key={index}
-            onClick={() => setSelectedNumber(value)}
+            onClick={() => numberSelectorHandler(value)}
           >
             {value}
           </Box>
@@ -36,6 +46,9 @@ const NumberSelectorContainer = styled.div`
   p {
     font-size: 24px;
     font-weight: 700;
+  }
+  .error {
+    color: red;
   }
 `;
 
