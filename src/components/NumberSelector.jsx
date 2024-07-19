@@ -5,12 +5,14 @@ const NumberSelector = () => {
   const arrayNum = [1, 2, 3, 4, 5, 6];
   const [selectedNumber, setSelectedNumber] = useState();
 
-  console.log(selectedNumber);
-
   return (
     <div>
       {arrayNum.map((value, index) => (
-        <Box key={index} onClick={() => setSelectedNumber(value)}>
+        <Box
+          isSelected={value == selectedNumber}
+          key={index}
+          onClick={() => setSelectedNumber(value)}
+        >
           {value}
         </Box>
       ))}
@@ -30,4 +32,6 @@ const Box = styled.div`
   font-size: 24px;
   font-weight: 700;
   border-radius: 5px;
+  background-color: ${(props) => (props.isSelected ? "black" : "white")};
+  color: ${(props) => (props.isSelected ? "white" : "black")};
 `;
