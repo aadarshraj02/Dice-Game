@@ -7,7 +7,7 @@ const NumberSelector = () => {
 
   return (
     <NumberSelectorContainer>
-      <div>
+      <div className="flexContainer">
         {arrayNum.map((value, index) => (
           <Box
             isSelected={value == selectedNumber}
@@ -25,7 +25,16 @@ const NumberSelector = () => {
 
 export default NumberSelector;
 
-const NumberSelectorContainer = styled.div``;
+const NumberSelectorContainer = styled.div`
+  .flexContainer {
+    display: flex;
+    gap: 24px;
+  }
+  p {
+    font-size: 24px;
+    font-weight: 700;
+  }
+`;
 
 const Box = styled.div`
   height: 72px;
