@@ -2,9 +2,9 @@ import TotalScore from "./TotalScore";
 
 const Gameplay = () => {
   return (
-    <div>
+    <main>
       <TotalScore></TotalScore>
-    </div>
+    </main>
   );
 };
 
