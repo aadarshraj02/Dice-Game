@@ -1,12 +1,13 @@
+/* eslint-disable react/prop-types */
 import styled from "styled-components";
 
-function StartGame() {
+function StartGame({ toggle }) {
   return (
     <Container>
       <img src="/dices.png" alt="" />
       <div className="content">
         <h1>DICE GAME</h1>
-        <Button>Play Now</Button>
+        <Button onClick={toggle}>Play Now</Button>
       </div>
     </Container>
   );
