@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 const NumberSelector = () => {
+  const arrayNum = [1, 2, 3, 4, 5, 6];
+
   return (
     <div>
-      <Box>1</Box>
-      <Box>2</Box>
-      <Box>3</Box>
-      <Box>4</Box>
-      <Box>5</Box>
-      <Box>6</Box>
+      {arrayNum.map((value, index) => (
+        <Box key={index}>{value}</Box>
+      ))}
     </div>
   );
 };
