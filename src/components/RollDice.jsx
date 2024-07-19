@@ -2,16 +2,21 @@ import styled from "styled-components";
 import { useState } from "react";
 
 function RollDice() {
-  const [currentDice, setCurrentDice] = useState();
+  const [currentDice, setCurrentDice] = useState(1);
 
   const generateRandomNumber = (min, max) => {
     return Math.floor(Math.random() * (max - min) + min);
   };
 
+  const rollDice = () => {
+    const randomNumber = generateRandomNumber(1, 7);
+    setCurrentDice((prev) => randomNumber);
+  };
+
   return (
     <DiceContainer>
-      <div className="dice">
-        <img src="../../public/dices/dice_1.png" alt="" />
+      <div className="dice" onClick={rollDice}>
+        <img src={`../../public/dices/dice_${currentDice}.png`} alt="" />
       </div>
       <p>Click on Dice to roll</p>
     </DiceContainer>
