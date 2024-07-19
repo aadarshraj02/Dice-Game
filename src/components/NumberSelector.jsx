@@ -26,6 +26,10 @@ const NumberSelector = () => {
 export default NumberSelector;
 
 const NumberSelectorContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 5px;
   .flexContainer {
     display: flex;
     gap: 24px;
