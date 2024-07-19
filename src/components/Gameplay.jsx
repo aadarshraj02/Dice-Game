@@ -16,6 +16,7 @@ const Gameplay = () => {
 export default Gameplay;
 
 const MainContainer = styled.main`
+  padding-top: 50px;
   .headerSection {
     display: flex;
     align-items: center;
