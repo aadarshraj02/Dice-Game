@@ -36,4 +36,9 @@ const Button = styled.button`
   color: #fff;
   border: none;
   cursor: pointer;
+  transition: all linear 0.4s;
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;
