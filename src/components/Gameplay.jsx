@@ -1,5 +1,11 @@
+import TotalScore from "./TotalScore";
+
 const Gameplay = () => {
-  return <div></div>;
+  return (
+    <div>
+      <TotalScore></TotalScore>
+    </div>
+  );
 };
 
 export default Gameplay;
