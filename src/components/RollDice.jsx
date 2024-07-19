@@ -3,7 +3,7 @@ import styled from "styled-components";
 function RollDice() {
   return (
     <DiceContainer>
-      <div>
+      <div className="dice">
         <img src="../../public/dices/dice_1.png" alt="" />
       </div>
       <p>Click on Dice to roll</p>
@@ -19,6 +19,10 @@ const DiceContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 48px;
+
+  .dice {
+    cursor: pointer;
+  }
 
   p {
     font-size: 24px;
