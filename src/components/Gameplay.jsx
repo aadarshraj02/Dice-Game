@@ -8,19 +8,32 @@ const Gameplay = () => {
   const [score, setScore] = useState();
   const [selectedNumber, setSelectedNumber] = useState();
   const [currentDice, setCurrentDice] = useState(1);
+
+  const generateRandomNumber = (min, max) => {
+    return Math.floor(Math.random() * (max - min) + min);
+  };
+
+  const rollDice = () => {
+    const randomNumber = generateRandomNumber(1, 7);
+    setCurrentDice((prev) => randomNumber);
+
+    if (selectedNumber == randomNumber) {
+      setScore(prev + randomNumber);
+    } else {
+      setScore((prev) => prev - 2);
+    }
+  };
+
   return (
     <MainContainer>
       <div className="headerSection">
-        <TotalScore></TotalScore>
+        <TotalScore score={score}></TotalScore>
         <NumberSelector
           selectedNumber={selectedNumber}
           setSelectedNumber={setSelectedNumber}
         ></NumberSelector>
       </div>
-      <RollDice
-        currentDice={currentDice}
-        setCurrentDice={setCurrentDice}
-      ></RollDice>
+      <RollDice currentDice={currentDice} rollDice={rollDice}></RollDice>
     </MainContainer>
   );
 };
