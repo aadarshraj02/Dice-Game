@@ -1,6 +1,13 @@
 import styled from "styled-components";
+import { useState } from "react";
 
 function RollDice() {
+  const [currentDice, setCurrentDice] = useState();
+
+  const generateRandomNumber = (min, max) => {
+    return Math.floor(Math.random() * (max - min) + min);
+  };
+
   return (
     <DiceContainer>
       <div className="dice">
