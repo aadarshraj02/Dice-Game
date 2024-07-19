@@ -6,6 +6,7 @@ import styled from "styled-components";
 
 const Gameplay = () => {
   const [selectedNumber, setSelectedNumber] = useState();
+  const [currentDice, setCurrentDice] = useState(1);
   return (
     <MainContainer>
       <div className="headerSection">
@@ -15,7 +16,10 @@ const Gameplay = () => {
           setSelectedNumber={setSelectedNumber}
         ></NumberSelector>
       </div>
-      <RollDice></RollDice>
+      <RollDice
+        currentDice={currentDice}
+        setCurrentDice={setCurrentDice}
+      ></RollDice>
     </MainContainer>
   );
 };
