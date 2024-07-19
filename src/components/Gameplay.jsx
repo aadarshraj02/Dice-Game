@@ -5,6 +5,7 @@ import TotalScore from "./TotalScore";
 import styled from "styled-components";
 
 const Gameplay = () => {
+  const [score, setScore] = useState();
   const [selectedNumber, setSelectedNumber] = useState();
   const [currentDice, setCurrentDice] = useState(1);
   return (
