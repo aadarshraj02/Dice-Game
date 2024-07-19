@@ -49,7 +49,7 @@ const Gameplay = () => {
       <RollDice currentDice={currentDice} rollDice={rollDice}></RollDice>
       <div className="btn">
         <Button>Reset Score</Button>
-        <Button></Button>
+        <Button>Show Rules</Button>
       </div>
     </MainContainer>
   );
@@ -67,5 +67,8 @@ const MainContainer = styled.main`
   .btn {
     display: flex;
     flex-direction: column;
+    max-width: 220px;
+    margin: 0 auto;
+    gap: 10px;
   }
 `;
