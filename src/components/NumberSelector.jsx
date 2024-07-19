@@ -32,6 +32,7 @@ const Box = styled.div`
   font-size: 24px;
   font-weight: 700;
   border-radius: 5px;
+  cursor: pointer;
   background-color: ${(props) => (props.isSelected ? "black" : "white")};
   color: ${(props) => (props.isSelected ? "white" : "black")};
 `;
