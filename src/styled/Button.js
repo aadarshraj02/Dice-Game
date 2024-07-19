@@ -8,9 +8,9 @@ export const Button = styled.button`
   color: #fff;
   border: none;
   cursor: pointer;
-  transition: all linear 0.4s;
+  transition: all 0.4s linear;
 
   &:hover {
-    opacity: 0.7;
+    opacity: 0.5;
   }
 `;

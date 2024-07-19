@@ -64,4 +64,8 @@ const MainContainer = styled.main`
     align-items: center;
     justify-content: space-around;
   }
+  .btn {
+    display: flex;
+    flex-direction: column;
+  }
 `;
