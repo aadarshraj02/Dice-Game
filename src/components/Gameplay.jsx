@@ -5,6 +5,7 @@ import NumberSelector from "./NumberSelector";
 import RollDice from "./RollDice";
 import TotalScore from "./TotalScore";
 import styled from "styled-components";
+import { Button } from "../styled/Button";
 
 const Gameplay = () => {
   const [score, setScore] = useState(0);
