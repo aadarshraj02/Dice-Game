@@ -1,7 +1,9 @@
-
+import styled from "styled-components";
 
 const Rules = () => {
-  return <div></div>;
+  return <RulesContainer></RulesContainer>;
 };
 
 export default Rules;
+
+const RulesContainer = styled.div``;
