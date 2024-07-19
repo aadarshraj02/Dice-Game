@@ -47,7 +47,7 @@ const Gameplay = () => {
       </div>
       <RollDice currentDice={currentDice} rollDice={rollDice}></RollDice>
       <div className="btn">
-        <Button></Button>
+        <Button>Reset Score</Button>
         <Button></Button>
       </div>
     </MainContainer>
